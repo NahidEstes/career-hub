@@ -1,13 +1,13 @@
 import React from "react";
-import image from "../assets/All Images/P3OLGJ1 copy 1.png";
-
+import image from "../assets/images/All-Images/P3OLGJ1copy 1.png";
 const Banner = () => {
   return (
-    <div className="custom-container">
-      <div className="flex">
+    <div className="bg-zinc-50">
+      <div className="flex custom-container">
         <div className="flex flex-col items-start justify-center">
-          <h1 className="text-5xl font-bold">
-            One Step <br /> Closer To Your <br />
+          <h1 className="text-6xl font-bold">
+            <span className="mb-2">One Step</span> <br />
+            <span className="mt-2">Closer To Your</span> <br />
             <span className="text-purple-500 ">Dream Job</span>
           </h1>
           <p className="text-slate-600 my-7 lg:w-8/12">

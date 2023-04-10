@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "company_logo": "../src/assets/images/All-Images/google-1-1 1.png",
+    "job_title": "Technical Database Engineer",
+    "company_title": "Google LLC",
+    "job_type": "Remote",
+    "job_time": "Full Time",
+    "location": "Dhaka, Bangladesh",
+    "salary": "100K - 150K"
+  },
+  {
+    "id": 2,
+    "company_logo": "../src/assets/images/All-Images/netflix-4 1.png",
+    "title": "Senior Product Designer",
+    "company_title": "Netflix",
+    "job_type": "Onsite",
+    "job_time": "Full Time",
+    "location": "Dhaka, Bangladesh",
+    "salary": "90K - 140K"
+  },
+  {
+    "id": 3,
+    "company_logo": "../src/assets/images/All-Images/tesla-9 1.png",
+    "title": "Software Engineer",
+    "company_title": "Tesla",
+    "job_type": "Onsite",
+    "job_time": "Full Time",
+    "location": "Dhaka, Bangladesh",
+    "salary": "100K - 150K"
+  },
+  {
+    "id": 4,
+    "company_logo": "../src/assets/images/All-Images/Group 10021.png",
+    "title": "Marketing Manager",
+    "company_title": "AirNb",
+    "job_type": "Remote",
+    "job_time": "Full Time",
+    "location": "Dhaka, Bangladesh",
+    "salary": "100K - 150K"
+  }
+]
