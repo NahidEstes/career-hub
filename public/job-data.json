@@ -17,8 +17,13 @@
     "job_type": "Onsite",
     "job_time": "Full Time",
     "location": "Dhaka, Bangladesh",
-    "salary": "90K - 140K"
+    "salary": "90K - 140K",
+    "job_description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "edu_requirements": "Bachelor degree to complete any reputational university.",
+    "experience": "2-3 Years in this field."
   },
+
   {
     "id": 3,
     "company_logo": "../src/assets/images/All-Images/tesla-9 1.png",

@@ -31,8 +31,8 @@ const FeaturedJobs = ({ jobData }) => {
           <span>Salary:{salary}</span>
         </div>
       </div>
-      <Link to="/job-details">
-        <button className="px-3 py-2 bg-purple-500 font-bold text-white rounded">
+      <Link to={`job/${id}`}>
+        <button className="px-3 py-2 bg-gradient-to-r from-purple-400 to-purple-500  font-bold text-white rounded">
           View Details
         </button>
       </Link>

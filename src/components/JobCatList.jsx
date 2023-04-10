@@ -9,13 +9,14 @@ const JobCatList = ({ jobsData }) => {
         need. Its your future
       </p>
       <div className="grid lg:grid-cols-4 gap-4 justify-center items-center pl-10 my-10">
-        {jobsData.map((job) => (
-          <div key={job.id} className="bg-slate-50 lg:w-10/12 rounded p-5">
-            <img src={job.img} alt="" />
-            <h3 className="text-lg font-semibold my-2">{job.title}</h3>
-            <p>{job.available_jobs} Jobs Available</p>
-          </div>
-        ))}
+        {jobsData &&
+          jobsData.map((job) => (
+            <div key={job.id} className="bg-slate-50 lg:w-10/12 rounded p-5">
+              <img src={job.img} alt="" />
+              <h3 className="text-lg font-semibold my-2">{job.title}</h3>
+              <p>{job.available_jobs} Jobs Available</p>
+            </div>
+          ))}
       </div>
     </div>
   );
