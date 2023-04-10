@@ -5,8 +5,8 @@ import moneyIcon from "../assets/images/Icons/Frame.png";
 const JobDetails = () => {
   const detailsData = useLoaderData();
   const { id } = useParams();
+  const [jobData, setJobData] = useState({});
 
-  const [jobDatas, setJobData] = useState({});
   const {
     job_description,
     job_responsibility,
@@ -14,11 +14,11 @@ const JobDetails = () => {
     experience,
     salary,
     title,
-  } = jobDatas;
+  } = jobData;
+
   useEffect(() => {
     const findData =
       detailsData && detailsData.find((detail) => detail.id === parseInt(id));
-    console.log(findData);
     setJobData(findData);
   }, []);
 
@@ -51,11 +51,11 @@ const JobDetails = () => {
               <div className="flex">
                 <img src={moneyIcon} alt="" />
                 <span>
-                  <strong>Salary:</strong> {}
+                  <strong>Salary:</strong> {salary}
                 </span>
               </div>
               <strong>Job Title:</strong>
-              Product Designer
+              {title}
             </div>
             <h3>Contact Information</h3>
             <hr />

@@ -1,17 +1,21 @@
 [
   {
     "id": 1,
-    "company_logo": "../src/assets/images/All-Images/google-1-1 1.png",
+    "company_logo": "https://i.ibb.co/C1GKnG0/google-1-1-1.png",
     "job_title": "Technical Database Engineer",
     "company_title": "Google LLC",
     "job_type": "Remote",
     "job_time": "Full Time",
     "location": "Dhaka, Bangladesh",
-    "salary": "100K - 150K"
+    "salary": "100K - 150K",
+    "job_description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "edu_requirements": "Bachelor degree to complete any reputational university.",
+    "experience": "2-3 Years in this field."
   },
   {
     "id": 2,
-    "company_logo": "../src/assets/images/All-Images/netflix-4 1.png",
+    "company_logo": "https://i.ibb.co/kXNY1XG/netflix-4-1.png",
     "title": "Senior Product Designer",
     "company_title": "Netflix",
     "job_type": "Onsite",
@@ -26,22 +30,30 @@
 
   {
     "id": 3,
-    "company_logo": "../src/assets/images/All-Images/tesla-9 1.png",
+    "company_logo": "https://i.ibb.co/LZK8Wdg/tesla-9-1.png",
     "title": "Software Engineer",
     "company_title": "Tesla",
     "job_type": "Onsite",
     "job_time": "Full Time",
     "location": "Dhaka, Bangladesh",
-    "salary": "100K - 150K"
+    "salary": "100K - 150K",
+    "job_description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "edu_requirements": "Bachelor degree to complete any reputational university.",
+    "experience": "2-3 Years in this field."
   },
   {
     "id": 4,
-    "company_logo": "../src/assets/images/All-Images/Group 10021.png",
+    "company_logo": "https://i.ibb.co/bXLgDDh/Group-10021.png",
     "title": "Marketing Manager",
     "company_title": "AirNb",
     "job_type": "Remote",
     "job_time": "Full Time",
     "location": "Dhaka, Bangladesh",
-    "salary": "100K - 150K"
+    "salary": "100K - 150K",
+    "job_description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "edu_requirements": "Bachelor degree to complete any reputational university.",
+    "experience": "2-3 Years in this field."
   }
 ]
