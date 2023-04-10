@@ -24,7 +24,7 @@ const Home = () => {
           Explore thousands of job opportunities with all the information you
           need. Its your future
         </p>
-        <div className="grid lg:grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-2 gap-4 ml-10">
           {data &&
             data.map((jobData) => (
               <FeaturedJobs key={jobData.id} jobData={jobData} />

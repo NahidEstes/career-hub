@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import moneyIcon from "../assets/images/Icons/Frame.png";
+import { addToDb } from "../utils/fakeDb";
 
 const JobDetails = () => {
   const detailsData = useLoaderData();
@@ -16,6 +17,11 @@ const JobDetails = () => {
     title,
   } = jobData;
 
+  const applyHandler = (id) => {
+    console.log(id);
+    addToDb(id);
+  };
+
   useEffect(() => {
     const findData =
       detailsData && detailsData.find((detail) => detail.id === parseInt(id));
@@ -26,7 +32,7 @@ const JobDetails = () => {
   return (
     <div className="custom-container">
       <h1>job details</h1>
-      <div className="flex">
+      <div className="lg:flex">
         <div className="lg:w-8/12">
           <p>
             <strong>Job Description:</strong> {job_description}
@@ -71,7 +77,11 @@ const JobDetails = () => {
               </p>
             </div>
           </div>
-          <button className="w-full mt-5 px-3 py-3 bg-purple-500 font-bold text-white rounded">
+
+          <button
+            onClick={() => applyHandler(id)}
+            className="w-full mt-5 px-3 py-3 bg-purple-500 font-bold text-white rounded"
+          >
             Apply Now
           </button>
         </div>

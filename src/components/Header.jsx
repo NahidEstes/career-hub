@@ -12,7 +12,7 @@ const Header = () => {
               Job<span className="text-purple-500">Research</span>
             </span>
           </Link>
-          <ul className="items-center hidden space-x-8 lg:flex">
+          <ul className="items-center hidden space-x-8 lg:flex font-semibold">
             <li>
               <NavLink
                 to="/"
@@ -44,12 +44,10 @@ const Header = () => {
                 Applied Jobs
               </NavLink>
             </li>
-            <li>
-              <button className="px-3 py-2 bg-purple-500 font-bold text-white rounded">
-                Start Applying
-              </button>
-            </li>
           </ul>
+          <button className="px-3 py-2 bg-purple-500 font-bold text-white rounded">
+            Start Applying
+          </button>
           {/* -------------- */}
           <div className="lg:hidden">
             <button
