@@ -18,7 +18,6 @@ const Home = () => {
     <div>
       <Banner />
       <JobCatList jobsData={jobsData} />
-
       <div className="custom-container">
         <h1 className="text-4xl text-center font-bold">Featured Jobs</h1>
         <p className="text-center my-4 text-slate-600">
