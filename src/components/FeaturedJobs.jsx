@@ -11,12 +11,12 @@ const FeaturedJobs = ({ jobData }) => {
     company_title,
     job_type,
     job_time,
-    location,
+    address,
     salary,
   } = jobData;
   return (
     <div className="border border-slate-300 p-5 ">
-      <img src={company_logo} alt="company-logo" />
+      <img src={company_logo} alt="company-logo" className="w-32" />
       <h2 className="text-xl my-3 font-semibold text-slate-800">{title}</h2>
       <p className="text-lg text-slate-700 font-semibold">{company_title}</p>
       <div className="my-3">
@@ -30,7 +30,7 @@ const FeaturedJobs = ({ jobData }) => {
       <div>
         <div className="inline-flex">
           <img src={locationIcon} alt="" />
-          <span className="ml-2 font-semibold text-slate-600"> {location}</span>
+          <span className="ml-2 font-semibold text-slate-600"> {address}</span>
           <img src={moneyIcon} className="ml-4" alt="" />
           <span className="ml-2 font-semibold text-slate-600">
             Salary:{salary}

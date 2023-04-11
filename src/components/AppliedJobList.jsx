@@ -13,8 +13,8 @@ const AppliedJobList = ({ job }) => {
   } = job;
   return (
     <div>
-      <div className="flex justify-between items-center border border-slate-200">
-        <div className="flex ">
+      <div className="lg:flex justify-between items-center border border-slate-200">
+        <div className="lg:flex">
           <img className="h-20 w-52 mt-5 p-2" src={company_logo} alt="" />
           <div className="p-5">
             <h2 className="text-xl font-semibold">{title}</h2>

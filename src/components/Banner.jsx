@@ -3,8 +3,8 @@ import image from "../assets/images/All-Images/P3OLGJ1copy 1.png";
 const Banner = () => {
   return (
     <div className="bg-zinc-50">
-      <div className="flex custom-container">
-        <div className="flex flex-col items-start justify-center">
+      <div className="lg:flex custom-container">
+        <div className="flex flex-col items-start justify-center mb-4">
           <h1 className="text-6xl font-bold">
             <span className="mb-2">One Step</span> <br />
             <span className="mt-2">Closer To Your</span> <br />

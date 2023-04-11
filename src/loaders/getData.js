@@ -15,5 +15,5 @@ export const getData = async () => {
       applyJob.push(foundJob);
     }
   }
-  return { jobData, applyJob };
+  return { applyJob };
 };

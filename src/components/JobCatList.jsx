@@ -8,7 +8,7 @@ const JobCatList = ({ jobsData }) => {
         Explore thousands of job opportunities with all the information you
         need. Its your future
       </p>
-      <div className="grid lg:grid-cols-4 gap-4 justify-center items-center pl-10 my-10">
+      <div className="grid lg:grid-cols-4 gap-4 justify-center items-center lg:pl-10 my-10">
         {jobsData &&
           jobsData.map((job) => (
             <div key={job.id} className="bg-slate-50 lg:w-10/12 rounded p-5">

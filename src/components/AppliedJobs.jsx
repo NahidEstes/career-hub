@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import AppliedJobList from "./AppliedJobList";
 
 const AppliedJobs = () => {
-  const { jobData, applyJob } = useLoaderData();
+  const { applyJob } = useLoaderData();
   console.log(applyJob);
   // const jobData = useLoaderData();
   // console.log("dfd id", typeof jobData[0].id);
@@ -25,7 +25,7 @@ const AppliedJobs = () => {
       <h1>{applyJob.length}</h1>
       <div>
         {applyJob.map((job) => (
-          <AppliedJobList job={job} />
+          <AppliedJobList key={job.id} job={job} />
         ))}
       </div>
     </div>

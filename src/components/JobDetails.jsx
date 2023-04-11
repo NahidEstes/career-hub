@@ -16,6 +16,9 @@ const JobDetails = () => {
     experience,
     salary,
     title,
+    phone_no,
+    email,
+    address,
   } = jobData;
 
   // const [applyJob, setApplyJob] =
@@ -77,23 +80,25 @@ const JobDetails = () => {
               <div className="flex">
                 <img src={moneyIcon} alt="" />
                 <span>
-                  <strong>Salary:</strong> {salary}
+                  <strong>Salary: </strong> {salary}
                 </span>
               </div>
-              <strong>Job Title:</strong>
+              <strong>Job Title: </strong>
               {title}
             </div>
             <h3>Contact Information</h3>
             <hr />
             <div>
               <p>
-                <strong>Phone:</strong> 0134553234345
+                <strong>Phone: </strong> {phone_no}
               </p>
               <p>
-                <strong>Email:</strong>info@gmail.com
+                <strong>Email: </strong>
+                {email}
               </p>
               <p>
-                <strong>Address</strong>Ghulsan-2, Dhaka, Bangladesh:
+                <strong>Address: </strong>
+                {email}
               </p>
             </div>
           </div>

@@ -24,11 +24,16 @@ const Home = () => {
           Explore thousands of job opportunities with all the information you
           need. Its your future
         </p>
-        <div className="grid lg:grid-cols-2 gap-4 ml-10">
+        <div className="grid lg:grid-cols-2 gap-4 lg:ml-10">
           {data &&
             data.map((jobData) => (
               <FeaturedJobs key={jobData.id} jobData={jobData} />
             ))}
+        </div>
+        <div className="text-center mt-10">
+          <button className="mt-4 px-3 py-2 bg-gradient-to-r from-purple-400 to-purple-500  font-bold text-white rounded">
+            Show More
+          </button>
         </div>
       </div>
     </div>
