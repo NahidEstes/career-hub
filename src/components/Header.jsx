@@ -44,6 +44,16 @@ const Header = () => {
                 Applied Jobs
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/blogs"
+                aria-label="Applied Jobs"
+                title="Applied Jobs"
+                className={({ isActive }) => (isActive ? "active" : "default")}
+              >
+                Blog
+              </NavLink>
+            </li>
           </ul>
           <button className="px-3 py-2 bg-purple-500 font-bold text-white rounded">
             Start Applying

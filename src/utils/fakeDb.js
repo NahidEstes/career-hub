@@ -2,7 +2,6 @@ const addToDb = (id) => {
   let shoppingCart = {};
 
   const storedCart = localStorage.getItem("apply-jobs");
-  console.log(storedCart);
   if (storedCart) {
     shoppingCart = JSON.parse(storedCart);
   }

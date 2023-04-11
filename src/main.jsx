@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import AppliedJobs from "./components/AppliedJobs";
+import Blog from "./components/Blog";
 import ErrorPage from "./components/ErrorPage";
 import Home from "./components/Home";
 import JobDetails from "./components/JobDetails";
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics />,
+      },
+      {
+        path: "/blogs",
+        element: <Blog />,
       },
       {
         path: "/applied-jobs",

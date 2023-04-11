@@ -1,16 +1,8 @@
 import React from "react";
 
 const AppliedJobList = ({ job }) => {
-  const {
-    id,
-    company_logo,
-    title,
-    company_title,
-    job_type,
-    job_time,
-    location,
-    salary,
-  } = job;
+  const { id, company_logo, title, company_title, job_type, job_time, salary } =
+    job;
   return (
     <div>
       <div className="lg:flex justify-between items-center border border-slate-200">

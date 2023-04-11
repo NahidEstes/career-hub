@@ -6,9 +6,7 @@ export const getData = async () => {
 
   let applyJob = [];
   const savedApplyJob = getStoredCart();
-  console.log(savedApplyJob);
   for (const id in savedApplyJob) {
-    console.log(typeof id);
     const foundJob = jobData.find((job) => job.id === parseInt(id));
 
     if (foundJob) {

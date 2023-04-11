@@ -8,7 +8,7 @@ const JobDetails = () => {
   const { id } = useParams();
   const [jobData, setJobData] = useState({});
   const [applyJob, setApplyJob] = useState({});
-  // console.log(jobData);
+
   const {
     job_description,
     job_responsibility,
@@ -21,15 +21,12 @@ const JobDetails = () => {
     address,
   } = jobData;
 
-  // const [applyJob, setApplyJob] =
-  // console.log(jobData);
   const applyHandler = (id) => {
     let newCart = [];
 
     const exists = detailsData.find(
       (jobDetail) => jobDetail.id === parseInt(id)
     );
-    console.log(exists);
     if (!exists) {
       product.quantity = 1;
       newCart = [...applyJob, product];
@@ -43,7 +40,6 @@ const JobDetails = () => {
     setApplyJob(newCart);
     addToDb(id);
   };
-  console.log(applyJob);
 
   useEffect(() => {
     const findData =
@@ -51,10 +47,11 @@ const JobDetails = () => {
     setJobData(findData);
   }, []);
 
-  //   console.log(jobDatas);
   return (
     <div className="custom-container">
-      <h1>job details</h1>
+      <div className="my-10">
+        <h1 className="text-center">Job Details</h1>
+      </div>
       <div className="lg:flex">
         <div className="lg:w-8/12">
           <p>
@@ -98,7 +95,7 @@ const JobDetails = () => {
               </p>
               <p>
                 <strong>Address: </strong>
-                {email}
+                {address}
               </p>
             </div>
           </div>
