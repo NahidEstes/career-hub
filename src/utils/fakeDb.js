@@ -6,10 +6,8 @@ const addToDb = (id) => {
   if (storedCart) {
     shoppingCart = JSON.parse(storedCart);
   }
-  console.log(shoppingCart);
 
   const quantity = shoppingCart[id];
-  console.log(quantity);
 
   if (quantity) {
     const newQuantity = quantity + 1;
@@ -20,4 +18,14 @@ const addToDb = (id) => {
   localStorage.setItem("apply-jobs", JSON.stringify(shoppingCart));
 };
 
-export { addToDb };
+const getStoredCart = () => {
+  let shoppingCart = {};
+
+  const storedCart = localStorage.getItem("apply-jobs");
+  if (storedCart) {
+    shoppingCart = JSON.parse(storedCart);
+  }
+  return shoppingCart;
+};
+
+export { addToDb, getStoredCart };

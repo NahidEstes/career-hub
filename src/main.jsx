@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import JobDetails from "./components/JobDetails";
 import Statistics from "./components/Statistics";
 import "./index.css";
+import { getData } from "./loaders/getData";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/applied-jobs",
         element: <AppliedJobs />,
+        loader: getData,
       },
       {
         path: "/job/:id",

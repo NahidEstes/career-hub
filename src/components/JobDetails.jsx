@@ -7,7 +7,8 @@ const JobDetails = () => {
   const detailsData = useLoaderData();
   const { id } = useParams();
   const [jobData, setJobData] = useState({});
-
+  const [applyJob, setApplyJob] = useState({});
+  // console.log(jobData);
   const {
     job_description,
     job_responsibility,
@@ -17,10 +18,29 @@ const JobDetails = () => {
     title,
   } = jobData;
 
+  // const [applyJob, setApplyJob] =
+  // console.log(jobData);
   const applyHandler = (id) => {
-    console.log(id);
+    let newCart = [];
+
+    const exists = detailsData.find(
+      (jobDetail) => jobDetail.id === parseInt(id)
+    );
+    console.log(exists);
+    if (!exists) {
+      product.quantity = 1;
+      newCart = [...applyJob, product];
+    } else {
+      const rest = detailsData.filter(
+        (existingProduct) => existingProduct.id !== parseInt(id)
+      );
+      exists.quantity = exists.quantity + 1;
+      newCart = [...rest, exists];
+    }
+    setApplyJob(newCart);
     addToDb(id);
   };
+  console.log(applyJob);
 
   useEffect(() => {
     const findData =
