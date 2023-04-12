@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import moneyIcon from "../assets/images/Icons/Frame.png";
+import jobTitleIcon from "../assets/images/Icons/Frame-1.png";
+import phoneIcon from "../assets/images/Icons/Frame-2.png";
+import emailIcon from "../assets/images/Icons/Frame-3.png";
+import locationIcon from "../assets/images/Icons/Frame-4.png";
 import { addToDb } from "../utils/fakeDb";
 
 const JobDetails = () => {
@@ -49,54 +53,78 @@ const JobDetails = () => {
 
   return (
     <div className="custom-container">
-      <div className="my-10">
-        <h1 className="text-center">Job Details</h1>
+      <div className="mb-28 mt-16">
+        <h1 className="text-center text-2xl font-bold text-gray-800">
+          Job Details
+        </h1>
       </div>
-      <div className="lg:flex">
+      <div className="lg:flex gap-3">
         <div className="lg:w-8/12">
           <p>
-            <strong>Job Description:</strong> {job_description}
+            <strong>Job Description: </strong>
+            <span className="text-gray-600">{job_description}</span>
+          </p>
+          <p className="my-4">
+            <strong>Job Responsibility: </strong>
+            <span className="text-gray-600">{job_responsibility}</span>
           </p>
           <p>
-            <strong>Job Responsibility:</strong> {job_responsibility}
+            <strong>Educational Requirements: </strong> <br />
+            <span className="text-gray-600">{edu_requirements}</span>
           </p>
-          <p>
-            <strong>Educational Requirements:</strong> <br />
-            {edu_requirements}
-          </p>
-          <p>
-            <strong>Experiences:</strong> <br />
-            {experience}
+          <p className="mt-4">
+            <strong>Experiences: </strong> <br />
+            <span className="text-gray-600">{experience}</span>
           </p>
         </div>
         <div>
-          <div className="leading-8 bg-purple-100 rounded p-8">
-            <h3>Job Details</h3>
+          <div className=" bg-purple-100 rounded p-6">
+            <h3 className="text-lg font-bold mb-2">Job Details</h3>
             <hr />
-            <div className="">
+
+            <div className="mt-3">
               <div className="flex">
                 <img src={moneyIcon} alt="" />
-                <span>
-                  <strong>Salary: </strong> {salary}
-                </span>
+                <p>
+                  <strong className="ml-2 text-gray-700">Salary: </strong>
+                  <span className="text-gray-600">{salary}</span>
+                </p>
               </div>
-              <strong>Job Title: </strong>
-              {title}
+              <div className="flex items-center">
+                <img src={jobTitleIcon} className="h-6" alt="" />
+                <p className="my-2">
+                  <strong className="ml-2 text-gray-700">Job Title: </strong>
+                  <span className="text-gray-600">{title}</span>
+                </p>
+              </div>
             </div>
-            <h3>Contact Information</h3>
+            <h3 className="text-lg font-bold text-gray-900 mb-2">
+              Contact Information
+            </h3>
             <hr />
             <div>
-              <p>
-                <strong>Phone: </strong> {phone_no}
-              </p>
-              <p>
-                <strong>Email: </strong>
-                {email}
-              </p>
-              <p>
-                <strong>Address: </strong>
-                {address}
-              </p>
+              <div className="flex items-center mt-2">
+                <img src={phoneIcon} className="h-5" alt="" />
+                <p>
+                  <strong className="ml-2 text-gray-700">Phone: </strong>
+                  <span className="text-gray-600">{phone_no}</span>
+                </p>
+              </div>
+              <div className="flex items-center">
+                <img src={emailIcon} className="w-5" alt="" />
+                <p className="my-2">
+                  <strong className="ml-2 text-gray-700">Email: </strong>
+                  <span className="text-gray-600">{email}</span>
+                </p>
+              </div>
+
+              <div className="flex items-center">
+                <img src={locationIcon} className="w-5" alt="" />
+                <p>
+                  <strong className="ml-2 text-gray-700">Address: </strong>
+                  <span className="text-gray-600">{address}</span>
+                </p>
+              </div>
             </div>
           </div>
 

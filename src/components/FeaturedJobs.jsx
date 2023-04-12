@@ -15,7 +15,7 @@ const FeaturedJobs = ({ jobData }) => {
     salary,
   } = jobData;
   return (
-    <div className="border border-slate-300 p-5 ">
+    <div className="border border-slate-300 p-5 shadow ">
       <img src={company_logo} alt="company-logo" className="w-32" />
       <h2 className="text-xl my-3 font-semibold text-slate-800">{title}</h2>
       <p className="text-lg text-slate-700 font-semibold">{company_title}</p>
@@ -33,7 +33,7 @@ const FeaturedJobs = ({ jobData }) => {
           <span className="ml-2 font-semibold text-slate-600"> {address}</span>
           <img src={moneyIcon} className="ml-4" alt="" />
           <span className="ml-2 font-semibold text-slate-600">
-            Salary:{salary}
+            Salary: {salary}
           </span>
         </div>
       </div>

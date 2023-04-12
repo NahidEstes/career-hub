@@ -8,12 +8,12 @@ const Home = () => {
   const jobsData = useLoaderData();
   const [data, setData] = useState();
 
-  const [showAllData, setShowAllData] = useState();
+  const [showAllData, setShowAllData] = useState(false);
 
   const showMoreButton = () => {
-    setData(showAllData);
+    setShowAllData(true);
   };
-  console.log(data);
+  console.log(showAllData);
 
   useEffect(() => {
     fetch("job-data.json")
@@ -34,12 +34,24 @@ const Home = () => {
           need. Its your future
         </p>
         <div className="grid lg:grid-cols-2 gap-4 lg:ml-10">
-          {data &&
+          {showAllData === true
+            ? data &&
+              data.map((jobData) => (
+                <FeaturedJobs key={jobData.id} jobData={jobData} />
+              ))
+            : data &&
+              data
+                .slice(0, 4)
+                .map((jobData) => (
+                  <FeaturedJobs key={jobData.id} jobData={jobData} />
+                ))}
+
+          {/* {data &&
             data
               .slice(0, 4)
               .map((jobData) => (
                 <FeaturedJobs key={jobData.id} jobData={jobData} />
-              ))}
+              ))} */}
         </div>
         <div className="text-center mt-10">
           <button

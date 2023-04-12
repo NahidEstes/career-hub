@@ -1,16 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import AppliedJobList from "./AppliedJobList";
 
 const AppliedJobs = () => {
   const { applyJob } = useLoaderData();
+  console.log(applyJob);
+  const [isFilter, setIsFilter] = useState(false);
+
+  const filteredHandler = (job_param) => {
+    // setIsFilter(true);
+    const filterData = applyJob.filter((job) => job.job_type === job_param);
+    setIsFilter(filterData);
+  };
+  console.log("filter", isFilter);
+
   return (
     <div className="custom-container">
-      <h1>{applyJob.length}</h1>
+      <h1 className="text-center font-bold text-3xl text-gray-800">
+        {applyJob.length === 0 ? "You did not apply to any job yet..." : ""}
+      </h1>
       <div>
-        {applyJob.map((job) => (
-          <AppliedJobList key={job.id} job={job} />
-        ))}
+        <div className="text-end">
+          <button
+            onClick={() => filteredHandler("Remote")}
+            className="px-3 py-2 bg-pink-500 font-bold text-white rounded mr-5"
+          >
+            Show Remote Jobs
+          </button>
+          <button className="px-3 py-2 bg-pink-500 font-bold text-white rounded mr-10">
+            Show Onsite Jobs
+          </button>
+        </div>
+      </div>
+
+      <div>
+        {isFilter
+          ? isFilter.map((job) => (
+              <AppliedJobList
+                key={job.id}
+                filteredHandler={filteredHandler}
+                job={job}
+              />
+            ))
+          : applyJob.map((job) => (
+              <AppliedJobList
+                key={job.id}
+                filteredHandler={filteredHandler}
+                job={job}
+              />
+            ))}
+        {/* {applyJob.map((job) => (
+          <AppliedJobList
+            key={job.id}
+            filteredHandler={filteredHandler}
+            job={job}
+          />
+        ))} */}
       </div>
     </div>
   );
