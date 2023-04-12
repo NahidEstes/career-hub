@@ -15,15 +15,15 @@ const FeaturedJobs = ({ jobData }) => {
     salary,
   } = jobData;
   return (
-    <div className="border border-slate-300 p-5 shadow ">
+    <div className="border border-slate-300 p-5 shadow rounded">
       <img src={company_logo} alt="company-logo" className="w-32" />
       <h2 className="text-xl my-3 font-semibold text-slate-800">{title}</h2>
       <p className="text-lg text-slate-700 font-semibold">{company_title}</p>
       <div className="my-3">
-        <button className="w-24 border border-cyan-400 px-5 py-1 rounded font-semibold text-slate-600">
+        <button className="w-24 border border-purple-400 px-5 py-1 rounded font-semibold text-purple-500">
           {job_type}
         </button>
-        <button className="border border-cyan-400 px-5 py-1 rounded ml-2 font-semibold text-slate-600">
+        <button className="border border-purple-400 px-5 py-1 rounded ml-2 font-semibold text-purple-500">
           {job_time}
         </button>
       </div>

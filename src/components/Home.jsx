@@ -45,13 +45,6 @@ const Home = () => {
                 .map((jobData) => (
                   <FeaturedJobs key={jobData.id} jobData={jobData} />
                 ))}
-
-          {/* {data &&
-            data
-              .slice(0, 4)
-              .map((jobData) => (
-                <FeaturedJobs key={jobData.id} jobData={jobData} />
-              ))} */}
         </div>
         <div className="text-center mt-10">
           <button
