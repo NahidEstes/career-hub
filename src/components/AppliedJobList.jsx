@@ -16,10 +16,10 @@ const AppliedJobList = ({ job }) => {
           <h2 className="text-xl font-semibold">{title}</h2>
           <p className="my-3 text-slate-500">{company_title}</p>
           <div>
-            <button className="border w-30 rounded  text-blue-500 border-cyan-100 px-4 py-1 mr-5 ">
+            <button className="border w-30 rounded  text-purple-500 border-purple-400 px-4 py-1 mr-5 ">
               {job_type}
             </button>
-            <button className="border w-30 rounded border-cyan-100 text-blue-500 px-4 py-1 mr-5 ">
+            <button className="border w-30 rounded border-purple-400 text-purple-500 px-4 py-1 mr-5 ">
               {job_time}
             </button>
           </div>

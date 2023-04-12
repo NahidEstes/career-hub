@@ -48,7 +48,7 @@ const Blog = () => {
           {/* ---------- Third Answer ---------- */}
 
           <h3 className=" text-2xl font-semibold">
-            2. What is useRef() and and what is this use cases?
+            3. What is useRef() and and what is this use cases?
           </h3>
           <p className="mt-3 lg:w-8/12 text-lg">
             <span className="underline text-xl font-bold pr-2">Answer:</span>
@@ -63,7 +63,7 @@ const Blog = () => {
         <div className="mt-4 p-3">
           {/* ---------- Fourth Answer ---------- */}
 
-          <h3 className=" text-2xl font-semibold">2. What is useMemo?</h3>
+          <h3 className=" text-2xl font-semibold">4. What is useMemo?</h3>
           <p className="mt-3 lg:w-8/12 text-lg">
             <span className="underline text-xl font-bold pr-2">Answer:</span>
             This hook allows us to cache the result of a calculation between

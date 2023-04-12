@@ -8,8 +8,8 @@ const Header = () => {
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <Link to="/" aria-label="HeroGadget" title="HeroGadget">
-            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 ">
-              Job<span className="text-purple-500">Research</span>
+            <span className="ml-2 text-2xl font-bold tracking-wide text-gray-800">
+              Work<span className="text-purple-500">Net</span>
             </span>
           </Link>
           <ul className="items-center hidden space-x-8 lg:flex font-semibold">
@@ -117,6 +117,16 @@ const Header = () => {
                     <ul className="space-y-4">
                       <li>
                         <Link
+                          to="/"
+                          aria-label="Home"
+                          title="Home"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Home
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
                           to="/statistics"
                           aria-label="Statistics"
                           title="Statistics"
@@ -133,6 +143,17 @@ const Header = () => {
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Applied Jobs
+                        </Link>
+                      </li>
+
+                      <li>
+                        <Link
+                          to="/blogs"
+                          aria-label="Blogs"
+                          title="Blogs"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Blogs
                         </Link>
                       </li>
                     </ul>

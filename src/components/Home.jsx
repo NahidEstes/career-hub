@@ -13,14 +13,12 @@ const Home = () => {
   const showMoreButton = () => {
     setShowAllData(true);
   };
-  console.log(showAllData);
 
   useEffect(() => {
     fetch("job-data.json")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
-        setShowAllData(data);
       });
   }, []);
   return (
