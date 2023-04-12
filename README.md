@@ -1,6 +1,6 @@
 # b7a9-career-hub-NahidEstes
 
-## Heading 2 Live Website Link: https://assignment-9th-by-nahid.netlify.app/
+## Live Website Link: https://assignment-9th-by-nahid.netlify.app/
 
 - This project is a job finding site. There are several types of jobs of different companies are given here, from there you can apply for specific jobs.
 
