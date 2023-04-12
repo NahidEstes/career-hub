@@ -22,6 +22,11 @@ const AppliedJobs = () => {
       <h1 className="text-center font-bold text-3xl text-gray-800">
         {applyJob.length === 0 ? "You did not apply to any job yet..." : ""}
       </h1>
+      <div className="mb-20 mt-10">
+        <h1 className="text-center text-2xl font-bold text-gray-800">
+          Applied Jobs
+        </h1>
+      </div>
       <div>
         <div className="text-end">
           <button
