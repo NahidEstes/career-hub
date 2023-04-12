@@ -7,10 +7,15 @@ const AppliedJobs = () => {
   console.log(applyJob);
   const [isFilter, setIsFilter] = useState(false);
 
-  const filteredHandler = (job_param) => {
+  const remoteFiltering = (job_param) => {
     // setIsFilter(true);
     const filterData = applyJob.filter((job) => job.job_type === job_param);
     setIsFilter(filterData);
+  };
+
+  const onsiteFiltering = (remote) => {
+    const remoteFilterData = applyJob.filter((job) => job.job_type === remote);
+    setIsFilter(remoteFilterData);
   };
   console.log("filter", isFilter);
 
@@ -22,12 +27,15 @@ const AppliedJobs = () => {
       <div>
         <div className="text-end">
           <button
-            onClick={() => filteredHandler("Remote")}
+            onClick={() => remoteFiltering("Remote")}
             className="px-3 py-2 bg-pink-500 font-bold text-white rounded mr-5"
           >
             Show Remote Jobs
           </button>
-          <button className="px-3 py-2 bg-pink-500 font-bold text-white rounded mr-10">
+          <button
+            onClick={() => onsiteFiltering("Onsite")}
+            className="px-3 py-2 bg-pink-500 font-bold text-white rounded mr-10"
+          >
             Show Onsite Jobs
           </button>
         </div>
@@ -38,21 +46,21 @@ const AppliedJobs = () => {
           ? isFilter.map((job) => (
               <AppliedJobList
                 key={job.id}
-                filteredHandler={filteredHandler}
+                remoteFiltering={remoteFiltering}
                 job={job}
               />
             ))
           : applyJob.map((job) => (
               <AppliedJobList
                 key={job.id}
-                filteredHandler={filteredHandler}
+                remoteFiltering={remoteFiltering}
                 job={job}
               />
             ))}
         {/* {applyJob.map((job) => (
           <AppliedJobList
             key={job.id}
-            filteredHandler={filteredHandler}
+            remoteFiltering={remoteFiltering}
             job={job}
           />
         ))} */}

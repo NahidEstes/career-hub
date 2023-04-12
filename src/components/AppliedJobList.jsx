@@ -7,9 +7,11 @@ const AppliedJobList = ({ job }) => {
     job;
 
   return (
-    <div className="lg:flex justify-between items-center border border-slate-200 my-5 shadow">
+    <div className="lg:flex justify-between items-center border border-slate-200 my-5 shadow p-4">
       <div className="lg:flex">
-        <img className="h-20 w-52 mt-5 p-2" src={company_logo} alt="" />
+        <div className="bg-slate-200 rounded p-5">
+          <img className="h-20 w-52 my-10 p-2" src={company_logo} alt="" />
+        </div>
         <div className="p-5">
           <h2 className="text-xl font-semibold">{title}</h2>
           <p className="my-3 text-slate-500">{company_title}</p>
